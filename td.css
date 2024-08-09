@@ -1,0 +1,121 @@
+/* Base styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #333;
+}
+
+.todo-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #444;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input#todo-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input#todo-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background: #667eea;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #764ba2;
+}
+
+ul#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#todo-list li {
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+ul#todo-list li:hover {
+    background: #e2e2e2;
+}
+
+ul#todo-list li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+    background: #eaeaea;
+}
+
+button.delete-btn {
+    background: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.delete-btn:hover {
+    background: #ff3b3b;
+}
+
+button.complete-btn {
+    background: #34d399;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+button.complete-btn:hover {
+    background: #2bc48a;
+}
